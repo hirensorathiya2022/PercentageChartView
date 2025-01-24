@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("maven-publish")
 }
 
 android {
@@ -23,7 +24,7 @@ android {
             )
         }
     }
-    
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -31,6 +32,22 @@ android {
 
     kotlinOptions {
         jvmTarget = "17"
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.hirensorathiya2022"
+            artifactId = "percentagechartview"
+            version = "1.0.0"
+            pom {
+                description.set("Created percentage chart view library")
+            }
+        }
+    }
+    repositories {
+        mavenLocal()
     }
 }
 
