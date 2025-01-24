@@ -4,9 +4,7 @@
 <br/>
 
 A Java-based easy to use and highly adjustable custom view that displays the progress of a single given task.
-<br/>Please feel free to see the library in action in a showcase app available on Google play. This will help you check if a certain design can be achieved.
-
-<a href="https://play.google.com/store/apps/details?id=com.ramijemli.percentagechartview"><img src="art/google-play-badge.png" title="Percentage Chart View google play demo"  width="30%"></a>
+<br/>
 
 ## RING MODE
 <img src="art/showcase_1.gif" width="30%"/>  <img src="art/showcase_2.gif" width="30%"/>  <img src="art/showcase_3.gif" width="30%"/>  <br/>  <img src="art/showcase_4.gif" width="30%"/><br/>
@@ -21,11 +19,9 @@ A Java-based easy to use and highly adjustable custom view that displays the pro
 Dependency should be declared in your app module level  `build.gradle` file:  
   
 ```  
-dependencies {    
-
-    implementation 'com.ramijemli.percentagechartview:percentagechartview:0.3.1' 
-    
-}  
+dependencies {
+	        implementation 'com.github.hirensorathiya2022:PercentageChartView:1.0.0'
+	}
 ```  
 
 ## HOW TO USE
