@@ -169,7 +169,7 @@ mRingChart.setTextFormatter(new ProgressTextFormatter() {
 -   [ ] SpannableString support  
 
 ## CONTRIBUTION
-All bugs, feature requests, feedback, etc. are welcome. Please, feel free to [create an issue](https://github.com/RamiJ3mli/PercentageChartView/issues).  
+All bugs, feature requests, feedback, etc. are welcome. Please, feel free to [create an issue](https://github.com/hirensorathiya2022/PercentageChartView/issues).  
 
 You can contribute by opening pull requests on dev branch. Please try to push commits per feature for a clean commit history.
 
