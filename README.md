@@ -20,13 +20,14 @@ Dependency should be declared in your app module level  `build.gradle` file:
   
 ```  
 dependencies {
-	        implementation 'com.github.hirensorathiya2022:PercentageChartView:1.0.0'
-	}
+
+	implementation 'com.github.hirensorathiya2022:PercentageChartView:1.0.0
+}
 ```  
 
 ## HOW TO USE
 ```  
-    <com.ramijemli.percentagechartview.PercentageChartView
+    <com.forthfox.percentagechartview.PercentageChartView
         android:id="@+id/view_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
