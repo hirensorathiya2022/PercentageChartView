@@ -18,6 +18,7 @@ package com.forthfox.percentagechartview;
 
 
 import android.animation.TimeInterpolator;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -185,6 +186,7 @@ public class PercentageChartView extends View implements IPercentageChartView {
         super.onDraw(canvas);
         renderer.draw(canvas);
     }
+
 
     @Override
     protected void onAttachedToWindow() {
@@ -455,6 +457,7 @@ public class PercentageChartView extends View implements IPercentageChartView {
      *
      * @return Gets progress gradient type.
      */
+    @SuppressLint("WrongConstant")
     @GradientTypes
     public int getGradientType() {
         return renderer.getGradientType();
@@ -582,6 +585,7 @@ public class PercentageChartView extends View implements IPercentageChartView {
      *
      * @return the text style
      */
+    @SuppressLint("WrongConstant")
     @TextStyle
     public int getTextStyle() {
         return renderer.getTextStyle();
