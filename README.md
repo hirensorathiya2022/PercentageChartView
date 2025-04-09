@@ -20,13 +20,14 @@ Dependency should be declared in your app module level  `build.gradle` file:
   
 ```  
 dependencies {
-	        implementation 'com.github.hirensorathiya2022:PercentageChartView:1.0.0'
-	}
+
+	implementation 'com.github.hirensorathiya2022:PercentageChartView:1.0.0
+}
 ```  
 
 ## HOW TO USE
 ```  
-    <com.ramijemli.percentagechartview.PercentageChartView
+    <com.forthfox.percentagechartview.PercentageChartView
         android:id="@+id/view_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -168,7 +169,7 @@ mRingChart.setTextFormatter(new ProgressTextFormatter() {
 -   [ ] SpannableString support  
 
 ## CONTRIBUTION
-All bugs, feature requests, feedback, etc. are welcome. Please, feel free to [create an issue](https://github.com/RamiJ3mli/PercentageChartView/issues).  
+All bugs, feature requests, feedback, etc. are welcome. Please, feel free to [create an issue](https://github.com/hirensorathiya2022/PercentageChartView/issues).  
 
 You can contribute by opening pull requests on dev branch. Please try to push commits per feature for a clean commit history.
 
