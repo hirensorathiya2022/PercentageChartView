@@ -181,9 +181,17 @@ public class PercentageChartView extends View implements IPercentageChartView {
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
+    protected void onDraw(@NonNull Canvas canvas) {
         super.onDraw(canvas);
         renderer.draw(canvas);
+    }
+
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        if (renderer == null) {
+            renderer = new PieModeRenderer(this);
+        }
     }
 
     @Override
