@@ -170,21 +170,20 @@ public class PercentageChartView extends View implements IPercentageChartView {
         setMeasuredDimension(w, h);
     }
 
-    @Override
-    protected void onDetachedFromWindow() {
+   /* protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        renderer.destroy();
-        renderer = null;
-
-        if (onProgressChangeListener != null) {
-            onProgressChangeListener = null;
+        this.renderer.destroy();
+        this.renderer = null;
+        if (this.onProgressChangeListener != null) {
+            this.onProgressChangeListener = null;
         }
-    }
+    }*/
 
-    @Override
     protected void onDraw(@NonNull Canvas canvas) {
         super.onDraw(canvas);
-        renderer.draw(canvas);
+        if (renderer != null) {
+            renderer.draw(canvas);
+        }
     }
 
 
