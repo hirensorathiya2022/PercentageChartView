@@ -40,7 +40,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.github.hirensorathiya2022"
             artifactId = "percentagechartview"
-            version = "1.0.1"
+            version = "1.0.3"
             pom {
                 description.set("Created percentage chart view library")
             }
